@@ -1,8 +1,6 @@
-import pandas as pd
-from sqlalchemy import create_engine,text
 import os
 import openai
-def sql_translate(txt):
+def translate(txt):
     openai.api_key = "<give your key>"
     response = openai.Completion.create(
       model="text-davinci-003",
@@ -16,4 +14,4 @@ def sql_translate(txt):
     )
     return response['choices'][0]['text']
 text=input()
-sql_translate(text)
+print(translate(text))
