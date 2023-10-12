@@ -1,1 +1,1 @@
-# TextToSQLQuery
+# Using Open AI in python
